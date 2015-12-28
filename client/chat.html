@@ -1,0 +1,23 @@
+<div id="chat-container" class="container">
+	<div id="header-container container">
+		<span>Olá {{ nickname }}, há {{ people }} pessoa(s) na sala.</span>
+		<button class="btn btn-default btn-sm" ng-click="logout()">Sair</button>
+	</div>
+	<hr/>
+	<div id="messages-container">
+		<div ng-repeat="m in messages">
+			<div class="message-row" ng-class="m.other ? 'bg-success' : 'bg-info'">
+				<div class="message-from">{{ m.from }} diz:</div>
+				<div class="message-content">{{ m.content }}</div>
+			</div>
+		</div>
+	</div>
+	<hr/>
+	<div id="message-composer">
+		<form ng-submit="sendMessage()">
+		<div class="form group">
+			<input type="text" class="form-control" placeholder="Diga alguma coisa..." ng-model="message_body" />
+		</div>
+		</form>
+	</div>
+</div>

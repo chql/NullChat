@@ -1,0 +1,39 @@
+div#chat-container {
+	margin-top: 20px;
+	max-width: 480px;
+}
+
+div#messages-container {
+	height: 300px;
+	padding: 10px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+div.message-row {
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+div.message-row.from-other {
+	background-color: aqua;
+}
+
+div.message-from {
+	font-size: 12px;
+	color: gray;
+}
+
+div.message-content {
+	font-size: 14px;
+	font-family: "Comic Sans MS";
+}
+
+div#message-composer {
+	margin-top: 20px;
+}
+
+button#button-send {
+	margin-top: 10px;
+}
